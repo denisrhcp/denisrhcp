@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosquinha do Neguin | Experiência Artesanal</title>
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/shared.css">
+</head>
+<body>
+
+<!-- VLibras -->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+</div>
+
+<nav role="navigation">
+  <div class="nav-container">
+      <a class="nav-brand" href="/">
+        <img src="/img/logo-200.png" alt="Logo">
+        <span>Rosquinha do Neguin</span>
+      </a>
+      
+      <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Início</a></li>
+        <li><a href="/cardapio.html">Cardápio</a></li>
+        <li class="user-only" style="display: none;"><a href="/meus-pedidos.html">Meus Pedidos</a></li>
+        <li><a href="/pedido.html">Carrinho <span class="cart-count">0</span></a></li>
+        <li id="navAuth">
+            <a href="/login.html" class="btn btn-outline">Entrar</a>
+        </li>
+      </ul>
+  </div>
+</nav>
+
+<header class="hero-section" id="heroSlider">
+    <div class="hero-slides">
+        <div class="slide active" style="background-image: url('/img/rosca.jpg');"></div>
+        <div class="slide" style="background-image: url('/img/rosca2.jpg');"></div>
+        <div class="slide" style="background-image: url('/img/rosca3.jpg');"></div>
+    </div>
+    
+    <div class="hero-content">
+        <img src="/img/logo-circle.png" alt="Logo" class="hero-logo-main">
+        <span class="hero-badge">A Melhor Doceria da Região</span>
+        <h1 class="hero-title">Momentos Doces, <br><span style="color: var(--color-dourado);">Feitos à Mão.</span></h1>
+        <p style="font-size: 1.2rem; margin-bottom: 40px; opacity: 0.9;">O segredo está na paixão por criar o churros perfeito.</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+            <a href="/cardapio.html" class="btn btn-xl btn-gold">Explorar Cardápio</a>
+            <a href="/pedido.html" class="btn btn-xl btn-outline" style="color: white; border-color: rgba(255,255,255,0.5);">Meu Pedido</a>
+        </div>
+    </div>
+</header>
+
+<section class="container" style="padding: 100px 0;">
+    <h2 class="section-title">Nossas Especialidades</h2>
+    <div class="category-circles">
+        <a href="/cardapio.html?cat=churros" class="cat-item">
+            <div class="cat-img" style="background-image: url('/img/churrus.png');"></div>
+            <h3>Churros</h3>
+        </a>
+        <a href="/cardapio.html?cat=rosquinhas" class="cat-item">
+            <div class="cat-img" style="background-image: url('/img/rosca3.jpg');"></div>
+            <h3>Rosquinhas</h3>
+        </a>
+        <a href="/cardapio.html?cat=salgados" class="cat-item">
+            <div class="cat-img" style="background-image: url('/img/salgados.png');"></div>
+            <h3>Salgados</h3>
+        </a>
+        <a href="/cardapio.html?cat=bebidas" class="cat-item">
+            <div class="cat-img" style="background-image: url('/img/bebidas.png');"></div>
+            <h3>Bebidas</h3>
+        </a>
+    </div>
+</section>
+
+<section class="product-highlight" style="background: white;">
+    <div class="img-stack">
+        <img src="/img/churrus.png" class="img-main" alt="Churros com Nutella">
+        <img src="/img/rosca3.jpg" class="img-sub" alt="Rosquinhas">
+    </div>
+    <div>
+        <h2 style="font-size: 3.5rem; margin-bottom: 30px;">Qualidade em cada <span style="color: var(--color-accent);">mordida.</span></h2>
+        <p style="font-size: 1.1rem; color: var(--color-text-sub); margin-bottom: 30px;">Trabalhamos apenas com as melhores marcas. Nutella real, chocolate belga e uma massa secreta que derrete na boca. Venha descobrir por que somos o Chef dos Churros.</p>
+        <ul style="list-style: none; margin-bottom: 40px;">
+            <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                <span style="color: var(--color-accent); font-size: 1.5rem;">✔</span> Frito na hora para você
+            </li>
+            <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                <span style="color: var(--color-accent); font-size: 1.5rem;">✔</span> Ingredientes selecionados
+            </li>
+            <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                <span style="color: var(--color-accent); font-size: 1.5rem;">✔</span> Entrega rápida e segura
+            </li>
+        </ul>
+        <a href="/cardapio.html" class="btn btn-gold">Ir para o Cardápio</a>
+    </div>
+</section>
+
+<footer style="padding: 100px 8%; background: var(--color-chocolate); color: white; text-align: center;">
+    <img src="/img/logo-200.png" alt="Logo" style="height: 100px; margin-bottom: 40px;">
+    <div style="display: flex; justify-content: center; gap: 50px; margin-bottom: 50px; flex-wrap: wrap;">
+        <div>
+            <h4 style="color: var(--color-dourado); margin-bottom: 15px;">Localização</h4>
+            <p>Rua dos Doces, 123 - Centro</p>
+        </div>
+        <div>
+            <h4 style="color: var(--color-dourado); margin-bottom: 15px;">Horário</h4>
+            <p>Seg a Sáb: 14h às 22h</p>
+        </div>
+        <div>
+            <h4 style="color: var(--color-dourado); margin-bottom: 15px;">Contato</h4>
+            <p>(11) 99999-9999</p>
+        </div>
+    </div>
+    <p style="opacity: 0.5; font-size: 0.8rem;">© 2026 Rosquinha do Neguin. Todos os direitos reservados.</p>
+</footer>
+
+<!-- VLibras -->
+
+<script src="/js/config.js"></script>
+<script src="/js/shared.js"></script>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+</body>
+</html>
